@@ -12,6 +12,6 @@ endif()
 
 include_directories("${CMAKE_CURRENT_BINARY_DIR}")
 
-add_executable(retailnext main.cpp)
+add_executable(retailnext main.cpp RNService.cpp)
 
 target_include_directories(retailnext PRIVATE "${CMAKE_CURRENT_BINARY_DIR}")
