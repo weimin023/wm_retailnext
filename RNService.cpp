@@ -1,7 +1,7 @@
 #include "RNService.h"
 
 
-json HierarchyService::processRequest(const string& request) {
+json HierarchyService::processRequest(const std::string& request) {
     try {
         json req_json = json::parse(request);
         if (req_json.contains("add_node")) return addNode(req_json["add_node"]);
