@@ -7,8 +7,7 @@ bool TreeHierarchy::addNode(const std::string& id, const std::string& name, std:
 
     auto newNode = std::make_shared<Node>(id, name);
 
-    // This newNode is a root
-    if (parentId.empty()) {
+    if (parentId.empty()) {          // This newNode is a root
         if (root) return false;
         root = newNode;
     } else {
